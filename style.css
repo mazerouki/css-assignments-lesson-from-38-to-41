@@ -57,3 +57,92 @@
     background-color: #eee;
     box-shadow: 0px 0px 9px inset;
 }
+
+/* Assign3 */
+.parent {
+    width: 550px;
+    height: 300px;
+    border: 1px solid;
+    margin: 20px auto;
+    position: relative;
+}
+.parent::before {
+    content: "";
+    width: 1px;
+    background-color: #14a9ed;
+    top: 10px;
+    content: "";
+    position: absolute;
+    height: 280px;
+    left: 50%;
+}
+.parent::after {
+    content: "Or";
+    background-color: #14a9ed;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: -11px;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+.parent div {
+    background-color: #eee;
+    width: 237px;
+    height: 286px;
+    margin: 6px 17px;
+    display: inline-block;
+    position: relative;
+}
+.basic::before {
+    content: "Free";
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    top: 27%;
+    right: 8%;
+    padding: 78px 65px;
+    font-size: 35px;
+}
+.basic::after {
+    content: "Basic";
+    background-color: #14a9ed;
+    color: white;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    padding: 9px 2px;
+    border-radius: 5px;
+    top: 18px;
+    right: 21px;
+    font-weight: bold;
+}
+.pro::before {
+    content: "$30";
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: 27%;
+    right: 8%;
+    padding: 78px 65px;
+    font-size: 35px;
+    text-align: center;
+}
+.pro::after {
+    content: "Pro";
+    background-color: #14a9ed;
+    color: white;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    padding: 9px 2px;
+    border-radius: 5px;
+    top: 18px;
+    right: 21px;
+    font-weight: bold;
+}
