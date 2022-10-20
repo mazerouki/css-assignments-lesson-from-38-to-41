@@ -111,8 +111,9 @@
 }
 .basic::after {
     content: "Basic";
-    background-color: #14a9ed;
-    color: white;
+    background-color: white;
+    color: #14a9ed;
+    border: 1px solid #14a9ed;
     position: absolute;
     width: 80%;
     text-align: center;
